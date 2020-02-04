@@ -1,0 +1,24 @@
+.newsletter {
+  width: $viewportWidth;
+  background-color: $whiteNot;
+  text-align: center;
+  padding-top: $padding30;
+  padding-bottom: $padding30;
+
+  &__title {
+    font-size: $size24;
+  }
+
+  &__group {
+    input, button {
+    display: inline-block;
+    border-width: 0;
+    font-size: $size13;
+    padding: $padding5 $padding10;
+    }
+    button {
+      background-color: $coral;
+      color: $white;
+    }
+  }
+}
