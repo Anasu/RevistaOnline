@@ -35,7 +35,7 @@ body {
   width: 840px;
   text-align: right;
 }
-ul li .menu__nav_no-deco-upper {
+ul li .menu__nav_item {
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -88,6 +88,33 @@ ul li .menu__nav_no-deco-upper {
 .contenido__noticias-destacadas {
   width: 220px;
   height: 220px;
+}
+
+.newsletter {
+  width: 960px;
+  background-color: #f2f4f5;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.newsletter__title {
+  font-size: 24px;
+}
+.newsletter__group input, .newsletter__group button {
+  display: inline-block;
+  border-width: 0;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+.newsletter__group button {
+  background-color: coral;
+  color: white;
+}
+
+.footer {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
