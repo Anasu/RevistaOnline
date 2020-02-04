@@ -1,6 +1,6 @@
 .menu {
   display: grid;
-  grid-template-columns: 5fr 3fr;
+  grid-template-columns: 6fr 2fr;
   border-bottom: 1px solid $gray;
 
   &__logo {
@@ -21,6 +21,10 @@
 
     &_item {
       grid-column: auto / span 1;
+    }
+
+    &_input-menu {
+      border-radius: 30px;
     }
   }
 
