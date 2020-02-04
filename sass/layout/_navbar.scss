@@ -1,27 +1,27 @@
 .menu {
-    width: $viewportWidth;
-    padding: $padding10;
-    border-bottom: 1px solid $gray;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  border-bottom: 1px solid $gray;
 
-    &__logo {
-      font-size: $size24;
-      font-weight: $bold;
-      text-transform: uppercase;
-      display: inline-block;
+  &__logo {
+    grid-column: 1 / span 1;
+  }
+
+  &__nav {
+    grid-column: 2 / span 1;
+
+    &_input-menu {
+      border-radius: 30px;
     }
+  }
 
-    &__nav {
-      display: inline-block;
-      width: $width840;
-      text-align: right;
+  &__group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
 
-      ul li &_item {
-        text-decoration: none;
-        text-transform: uppercase;
-      }
-
-      &_input-menu {
-        border-radius: 30px;
-      }
+    &_item {
+      grid-column: auto / span 1;
     }
+  }
+
   }

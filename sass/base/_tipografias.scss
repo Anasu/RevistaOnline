@@ -1,0 +1,12 @@
+// Tipografias Navbar
+.menu {
+  &__logo{
+    font-size: $size24;
+    font-weight: $bold;
+    text-transform: uppercase;
+  }
+  &__group_link{
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

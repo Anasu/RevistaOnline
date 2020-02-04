@@ -18,7 +18,7 @@ $bold: 500;
 // Tipografías: Extra
 
 // Diagramacion
-$viewportWidth: 960px;
+$viewportWidth: 100%;
 $width840: 840px;
 $width700: 700px;
 $width220: 220px;
@@ -28,7 +28,7 @@ $height220: 220px;
 $padding2: 2px;
 $padding4: 4px;
 $padding5: 5px;
-$padding10: 10px;
+$padding10: 1%; //10px
 $padding30: 30px;
 $margin5: 5px;
 $margin1: 1px;
