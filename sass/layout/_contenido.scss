@@ -3,29 +3,31 @@
   grid-template-columns: 3fr 1fr;
   grid-column-gap: 4%;
 
-  &__list-noticias {
+  &__contenedor-noticias {
     grid-column: 1 / span 1;
+  }
+  
+  &__list-noticias {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 0% 4%;
+    padding-left: 7%;
   }
 
   &__noticia {
-    width: $widthNews;
-    display: inline-block;  
-    cursor: pointer;
+    grid-column: auto / span 1;
   }
 
-
   &__cuerpo {
-    
     img {
       width: 100%;
-    }
-    p {
-
     }
   }
 
   &__barra-lateral {
     grid-column: 2 / span 1;
+    padding-right: 22%;
   }
 
   &__barra-cabecera {
@@ -46,9 +48,5 @@
       }
     }
   }
-  
-  &__noticias-destacadas {
-
-  }
-  
+    
 }
