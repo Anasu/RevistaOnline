@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-column-gap: 4%;
+  margin-bottom: 5%;
 
   &__contenedor-noticias {
     grid-column: 1 / span 1;
@@ -25,6 +26,7 @@
     }
   }
 
+  //Barra lateral
   &__barra-lateral {
     grid-column: 2 / span 1;
     padding-right: 22%;
@@ -38,15 +40,25 @@
     border-bottom: 1px solid $gray;
 
     ul{
-      padding: 0;
       list-style: none;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 5%;
+      padding: 0 10%;
 
       li{
         background-color: $steelblue;
         color: $white;
-        width: fit-content;
+        grid-column: auto / span 1;
+        text-align: center;
+        padding: 5% 10%;
       }
     }
   }
-    
+  
+  &__noticias-destacadas {
+    img {
+      width: 100%;
+    }
+  }
 }
