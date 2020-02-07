@@ -47,8 +47,8 @@
       list-style: none;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 10%;
-      padding: 0 10%;
+      grid-column-gap: 2%;
+      padding: 0 2% 0 5%;
 
       li{
         background-color: $steelblue;

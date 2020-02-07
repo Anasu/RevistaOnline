@@ -18,6 +18,12 @@
       grid-template-columns: 1fr 1fr 2fr;
     }
   }
+
+  &__logo {
+    @include respond-to('medium') {
+      padding-left: 0%;
+    }
+  }
 }
 
 // Contenido
