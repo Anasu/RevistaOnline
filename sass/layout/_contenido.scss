@@ -1,7 +1,4 @@
 .contenido {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-column-gap: 4%;
   margin-bottom: 5%;
 
   &__contenedor-noticias {
@@ -9,11 +6,7 @@
   }
   
   &__list-noticias {
-    display: grid;
-    grid-template-columns: repeat(3 ,1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 0% 4%;
-    padding-left: 7%;
+    padding: 2%;
   }
 
   &__noticia {
@@ -24,6 +17,17 @@
     img {
       width: 100%;
     }
+  }
+  
+  &__img {
+    width: 95%;
+    height: 50vh;
+    max-height: 144px;
+    background-image: url('https://picsum.photos/200/300?random='+(random(11) + 4));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
   }
 
   //Barra lateral
