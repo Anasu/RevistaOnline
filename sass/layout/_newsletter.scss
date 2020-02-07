@@ -2,8 +2,7 @@
   width: $viewportWidth;
   background-color: $whiteNot;
   text-align: center;
-  padding-top: $padding30;
-  padding-bottom: $padding30;
+  padding: 5%;
 
   &__title {
     @include relative-converter(font-size, rem , $textLarge, 16);
