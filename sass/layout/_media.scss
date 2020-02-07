@@ -1,0 +1,21 @@
+// Contenedor
+.contenedor {
+  &_d-none-mobile {
+    @include respond-to('medium') {
+      display: block;
+    }
+  }
+}
+
+// navbar
+.menu {
+  @include respond-to('medium') {
+    grid-template-columns: 5fr 2fr;
+  }
+
+  &__group {
+    @include respond-to('medium') {
+      grid-template-columns: 1fr 1fr 2fr;
+    }
+  }
+}

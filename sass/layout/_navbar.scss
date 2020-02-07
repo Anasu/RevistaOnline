@@ -1,10 +1,9 @@
 .menu {
   display: grid;
-  grid-template-columns: 6fr 2fr;
+  grid-template-columns: 2fr 2fr;
   border-bottom: 1px solid $gray;
   padding: 2% 0 ;
-  box-sizing: border-box;
-
+  
   &__logo {
     grid-column: 1 / span 1;
   }
@@ -12,14 +11,17 @@
   &__nav {
     grid-column: 2 / span 1;
 
-    &_input-menu {
-      border-radius: 30px;
-    }
   }
-
+  
   &__group {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5%;
+
+    &_input-menu {
+      border-radius: 30px;
+      width: 100%;
+    }
 
     &_item {
       grid-column: auto / span 1;
@@ -29,5 +31,5 @@
       border-radius: 30px;
     }
   }
+}
 
-  }
